@@ -87,7 +87,7 @@ public class FoodLogWriter {
 
 			fileWriter = new FileWriter(fileName, true);
 
-			if (file.exists() == true) {
+			if (file.exists() == false) {
 				fileWriter.write(FILE_HEADER.toString());
 			}
 			fileWriter.append(NEW_LINE_SEPARATOR);
